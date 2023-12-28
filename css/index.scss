@@ -1,0 +1,20 @@
+$bgcolor: rgb(0, 0, 0);
+$textcolor: rgb(255, 255, 255);
+$fontsize: 18px;
+
+body {
+  background-color: $bgcolor;
+  color:$textcolor;
+  font-size: $fontsize;
+}             
+@mixin important-text {
+  color: rgb(10, 166, 238);
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid rgb(21, 255, 0);
+}
+
+h1, h4{
+  @include important-text;
+  background-color: rgb(105, 252, 220);
+} 

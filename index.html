@@ -1,11 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <title>Bootstrap 5 Website Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="./css/index.css">
+  <style>
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+  #Logo{
+    width: 300px;
+    height: 300px;
+  }
+  #USA1{
+    width: 500px;
+    height: 500px;
+  }
+  #Suiza1{
+    width: 500px;
+    height: 500px;
+  }
+  #Japon1{
+    width: 500px;
+    height: 500px;
+  }
+  </style>
 </head>
 <body>
-    <h1>Hola</h1>
+
+<div class="p-5 bg-primary text-white text-center">
+  <h1 id="Viajes">Viajes</h1>
+  <p>Elige tu mejor viaje con nosotrosxd!</p> 
+</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#Logo1">logo</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#Registro">Iniciar sesion</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Fotos">Fotos</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-sm-4">
+      <h2 id="Logo1">Logo</h2>
+      <img id="Logo" src="./iMG/logo.jpg" alt="logo de la empresa">
+      <p>Viaja ya con nosotros</p>
+      <h3 class="mt-4">Ejemplos de lugares</h3>
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="#USA">USA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Suiza">Suiza</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Japon">Japon</a>
+        </li>
+        
+      </ul>
+      <hr class="d-sm-none">
+    </div>
+    <div class="col-sm-8">
+      <h2 id="USA">USA</h2>
+      <h5>Estados Unidos</h5>
+      <img id="USA1" src="./iMG/USA.JPG" alt="USA">
+      <p>Estados Unidos</p>
+      <p> Una buena razón para viajar a Estados Unidos podría ser:</p>
+      <h4>Explorar la Diversidad Cultural:</h4>
+      <p>Estados Unidos es conocido por su diversidad cultural, ya que alberga una mezcla única de tradiciones, costumbres, gastronomía y estilos de vida. Desde las bulliciosas calles de Nueva York hasta las soleadas playas de California, cada estado tiene su propia identidad. Viajar por el país te permite sumergirte en esta diversidad y apreciar las diferentes perspectivas que coexisten en una sola nación.</p>
+      <h2 id="Suiza" class="mt-5">Suiza</h2>
+      <h5>Suiza</h5>
+       <img id="Suiza1" src="./iMG/Suiza.jpg" alt="Suiza">
+      <p>Suiza</p>
+      <p>Hay varias razones para visitar Suiza. Una buena razón podría ser:</p>
+      <h4>Disfrutar de la Belleza Natural y la Tranquilidad:</h4>
+      <p>Suiza es conocida por su impresionante paisaje alpino, lagos cristalinos y pintorescos pueblos. Los Alpes suizos ofrecen oportunidades para practicar deportes de invierno como esquí y snowboard, así como senderismo y ciclismo en verano. Los lagos suizos, como el Lago Ginebra y el Lago Lucerna, son lugares serenos que ofrecen actividades acuáticas y vistas impresionantes.</p>
+      <h2 class="mt-5">Japon</h2>
+      <h5 id="Japon">Japon</h5>
+      <img id="Japon1" src="./iMG/Japon.jpg" alt="Japon">
+      <p>Una razon para viajar a japon es:</p>
+      <h4>Experimentar la Fusión de Tradición y Modernidad:</h4>
+      <p>Japón es un país que combina armoniosamente su rica herencia cultural con la modernidad. Los visitantes pueden sumergirse en la tradición al explorar antiguos templos, jardines zen y participar en festivales culturales como el hanami (observación de flores de cerezo). Al mismo tiempo, pueden maravillarse con la tecnología de vanguardia, la arquitectura futurista y la eficiencia urbana en ciudades como Tokio</p>
+    
+    </div>
+  </div>
+ <h1>A continuacion</h1>
+ <p>Veremos unos ejemplo de ciudades de los paises mencionados arriba</p>
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+  
+  <!-- The slideshow/carousel -->
+  <div id="Fotos" class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./iMG/Los_Angeles.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+    </div>
+    <div class="carousel-item">
+      <img src="./iMG/Tokyo.jpg" alt="Tokyo" class="d-block" style="width:100%">
+    </div>
+    <div class="carousel-item">
+      <img src="./iMG/berna.jpg" alt="Berna" class="d-block" style="width:100% ">
+    </div>
+   </div>
+  
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+ </div> <br>
+ <div class="mt-5 p-4 bg-danger text-white text-center">
+   <p>Registrarme</p>
+    <form id="Registro" class="Encuesta" action="/tu_ruta_de_autenticacion" method="post">
+  <label for="usuario">Usuario:</label>
+  <input type="text" id="usuario" name="usuario" pattern="[A-Za-z0-9_]{3,30}"   required><br>
+
+  <label for="contrasena">Contraseña:</label>
+  <input type="password" id="contrasena" name="contrasena"  pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,16}$" required><br>
+
+  <label>
+    <input type="checkbox" id="aceptoCondiciones" name="aceptoCondiciones" required>
+    Acepto las condiciones
+  </label><br>
+  
+  <button type="submit" href="#Viajes">Iniciar Sesión</button>
+</form>
+ </div>
+</div>
 </body>
 </html>
